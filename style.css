@@ -22,6 +22,7 @@
   
   body {
     margin: 0;
+    padding: 0;
   }
   
   /**
@@ -198,7 +199,9 @@
   [type="submit"] {
     -webkit-appearance: button;
   }
-  
+  ul{
+    padding: 0;
+  }
   /**
    * Remove the inner border and padding in Firefox.
    */
@@ -351,25 +354,131 @@
 li{
     list-style: none;
 }
+
+
+@font-face {
+  font-family: "Monserat";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Monserat Light"), local("Montserrat-Light"), url("../fonts/Montserrat-Light.woff2") format("woff2")}
+@font-face {
+  font-family: "Monserat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Monserat Medium"), local("Monserat-Medium"), url("../fonts/Montserrat-Medium.woff2") format("woff2")}
+  @font-face {
+    font-family: "Monserat";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local("Monserat SemiBold"), local("Monserat-Bold"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2") }
+
+@font-face {
+  font-family: "Monserat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Monserat Bold"), local("Monserat-Bold"), url("../fonts/Montserrat-Bold.woff2") format("woff2") }
+
+  @font-face {
+    font-family: "Monserat";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: local("Montserrat ExtraBold"), local("Montserrat-ExtraBold"), url("../fonts/Montserrat-ExtraBold.woff2") format("woff2")}
 .page{
     background-color: #6E105E;
     
 }
 .page__body{
-    max-width: 1440px;
+    max-width: 1300px;
+    margin: 0 auto;
+    font-family: "Monserat", "Arial", sans-serif;
+}
+.main-nav__list{
+  display: flex;
+  align-items: center;
+}
+.main-nav__list li:last-child{
+  margin-left: auto;
+}
+.main-nav__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 .site-list__item{
-   
-    color: #EFF3F5;
+  padding-left: 30px;
+    
+    
+
 }
+.site-list__item a {
+  text-decoration: none;
+  color: #EFF3F5;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .main-page__title {
     color: #EFF3F5;
     -webkit-text-stroke: 1px #000000;
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 800;
+    text-align: center;
+
 }
 .blogers-list{
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 35px 20px;
+}
+.blogers-detail{
+  position: relative;
+}
+.blogers-detail-list{
+  position: absolute;
+  display: grid;
+    grid-template-rows: ;
+    grid-template-rows: repeat(3, .3fr);
+    grid-template-columns: 1fr 1fr;
+    bottom: 20px;
+    left: 12px;
+}
+
+.blogers-detail-list__item{
+  color: #EFF3F5;
+}
+.blogers-detail-list li:first-child{
+  grid-column-start: 1;
+    grid-column-end: -1;
+}
+.blogers-detail-list__item h3{
+  font-size: 30px;
+  font-weight: 700;
+}
+.blogers-detail-list__item span{
+  font-size: 20px;
+  padding-left: 10px;
+}
+.footer-items__links{
+  display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-content: space-between;
+    justify-self: flex-end;
+    align-items: center;
+    grid-template-areas: 'z x'
+                        'z y';
+}
+.links-list{
+  display: flex;
+  grid-area: y;
+}
+.links-social{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  justify-self: center;
+  grid-area: x;
 }

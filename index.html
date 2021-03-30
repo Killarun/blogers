@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./fonts/Montserrat-Bold.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+    <link href="./fonts/Montserrat-SemiBold.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+    <link href="./fonts/Montserrat-ExtraBold.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+    <link href="./fonts/Montserrat-Medium.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+    <link href="./fonts/Montserrat-Light.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="/style.css" rel="stylesheet">
     <title>Топ БРО</title>
 </head>
@@ -13,68 +19,140 @@
         <nav class="main-nav">
             <div class="main-nav__wrapper">
                 <picture>
-                    <img src="./img/logos/header-logo.png" alt="Логотип ТОП БРО">
+                    <img src="./img/logos/logo.png" width="98" height="98" alt="Логотип ТОП БРО">
                 </picture>
                 <ul class="main-nav__list site-list">
-                    <li class="site-list__item">Блогеры</li>
-                    <li class="site-list__item">Кейсы</li>
-                    <li class="site-list__item">exit agency</li>
-                    <li class="site-list__item">Контакты</li>
-                    <li class="site-list__item">en/ru</li>
+                    <li class="site-list__item"><a href="#">Блогеры</a></li>
+                    <li class="site-list__item"><a href="#">Кейсы</a></li>
+                    <li class="site-list__item"><a href="#">exit agency</a></li>
+                    <li class="site-list__item"><a href="#">Контакты</a></li>
+                    <li class="site-list__item"><a href="#">en/ru</a></li>
                 </ul>
             </div>
         </nav>
+        
     </header>
     <main class="page__main main-page">
         <h1 class="main-page__title">Блогеры</h1>
         <section class="main-page__section section-blogers">
             <div class="section-blogers__wrapper">
                 <ul class="blogers-list">
-                    <li class="blogers-list__item">
-                        <picture><img width="311" height="311" src="./img/pictures/Rectangle 25.png" alt="Макс Максимов"></picture>
+                    <li class="blogers-list__item blogers-detail">
+                        <ul class="blogers-detail-list">
+                            <li class="blogers-detail-list__item"><h3>Макс Максимов</h3></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-youtube-square"></i><span >3 160 000+</span></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-vk"></i><span class="blogers-detail-list__item-span">134 000+</span></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-instagram"></i><span class="blogers-detail-list__item-span">128 000+</span></li>
+                        </ul>
+                   
+                        <picture>
+                            <img width="311" height="311" src="./img/pictures/Rectangle 25.png" alt="Макс Максимов">
+                        </picture>
+                        
+                       
                     </li>
-                    <li class="blogers-list__item">
-                        <picture><img width="311" height="311" src="./img/pictures/Rectangle 26.png" alt="Макс Максимов"></picture>
+                    <li class="blogers-list__item blogers-detail">
+                        <ul class="blogers-detail-list">
+                            <li class="blogers-detail-list__item"><h3>Макс Максимов</h3></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-youtube-square"></i><span >3 160 000+</span></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-vk"></i><span class="blogers-detail-list__item-span">134 000+</span></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-instagram"></i><span class="blogers-detail-list__item-span">128 000+</span></li>
+                        </ul>
+                        <picture>
+                            <img width="311" height="311" src="./img/pictures/Rectangle 26.png" alt="Макс Максимов">
+                        </picture>
                     </li>
-                    <li class="blogers-list__item">
-                        <picture><img width="311" height="311" src="./img/pictures/Rectangle 27.png" alt="Макс Максимов"></picture>
+                    <li class="blogers-list__item blogers-detail">
+                        <ul class="blogers-detail-list">
+                            <li class="blogers-detail-list__item"><h3>Макс Максимов</h3></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-youtube-square"></i><span >3 160 000+</span></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-vk"></i><span class="blogers-detail-list__item-span">134 000+</span></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-instagram"></i><span class="blogers-detail-list__item-span">128 000+</span></li>
+                        </ul>
+                        <picture>
+                            <img width="311" height="311" src="./img/pictures/Rectangle 27.png" alt="Макс Максимов">
+                        </picture>
                     </li>
-                    <li class="blogers-list__item">
-                        <picture><img width="311" height="311" src="./img/pictures/Rectangle 28.png" alt="Макс Максимов"></picture>
+                    <li class="blogers-list__item blogers-detail">
+                        <ul class="blogers-detail-list">
+                            <li class="blogers-detail-list__item"><h3>Макс Максимов</h3></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-youtube-square"></i><span >3 160 000+</span></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-vk"></i><span class="blogers-detail-list__item-span">134 000+</span></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-instagram"></i><span class="blogers-detail-list__item-span">128 000+</span></li>
+                        </ul>
+                        <picture>
+                            <img width="311" height="311" src="./img/pictures/Rectangle 28.png" alt="Макс Максимов">
+                        </picture>
                     </li>
-                    <li class="blogers-list__item">
-                        <picture><img width="311" height="311" src="./img/pictures/Rectangle 29.png" alt="Макс Максимов"></picture>
+                    <li class="blogers-list__item blogers-detail">
+                        <ul class="blogers-detail-list">
+                            <li class="blogers-detail-list__item"><h3>Макс Максимов</h3></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-youtube-square"></i><span >3 160 000+</span></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-vk"></i><span class="blogers-detail-list__item-span">134 000+</span></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-instagram"></i><span class="blogers-detail-list__item-span">128 000+</span></li>
+                        </ul>
+                        <picture>
+                            <img width="311" height="311" src="./img/pictures/Rectangle 29.png" alt="Макс Максимов">
+                        </picture>
                     </li>
-                    <li class="blogers-list__item">
-                        <picture><img width="311" height="311" src="./img/pictures/Rectangle 30.png" alt="Макс Максимов"></picture>
+                    <li class="blogers-list__item blogers-detail">
+                        <ul class="blogers-detail-list">
+                            <li class="blogers-detail-list__item"><h3>Макс Максимов</h3></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-youtube-square"></i><span >3 160 000+</span></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-vk"></i><span class="blogers-detail-list__item-span">134 000+</span></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-instagram"></i><span class="blogers-detail-list__item-span">128 000+</span></li>
+                        </ul>
+                        <picture>
+                            <img width="311" height="311" src="./img/pictures/Rectangle 30.png" alt="Макс Максимов">
+                        </picture>
                     </li>
-                    <li class="blogers-list__item">
-                        <picture><img width="311" height="311" src="./img/pictures/Rectangle 31.png" alt="Макс Максимов"></picture>
+                    <li class="blogers-list__item blogers-detail">
+                        <ul class="blogers-detail-list">
+                            <li class="blogers-detail-list__item"><h3>Макс Максимов</h3></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-youtube-square"></i><span >3 160 000+</span></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-vk"></i><span class="blogers-detail-list__item-span">134 000+</span></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-instagram"></i><span class="blogers-detail-list__item-span">128 000+</span></li>
+                        </ul>
+                        <picture>
+                            <img width="311" height="311" src="./img/pictures/Rectangle 31.png" alt="Макс Максимов">
+                        </picture>
                     </li>
-                    <li class="blogers-list__item">
-                        <picture><img width="311" height="311" src="./img/pictures/Rectangle 32.png" alt="Макс Максимов"></picture>
+                    <li class="blogers-list__item blogers-detail">
+                        <ul class="blogers-detail-list">
+                            <li class="blogers-detail-list__item"><h3>Макс Максимов</h3></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-youtube-square"></i><span >3 160 000+</span></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-vk"></i><span class="blogers-detail-list__item-span">134 000+</span></li>
+                            <li class="blogers-detail-list__item"><i class="fab fa-instagram"></i><span class="blogers-detail-list__item-span">128 000+</span></li>
+                        </ul>
+                        <picture>
+                            <img width="311" height="311" src="./img/pictures/Rectangle 32.png" alt="Макс Максимов">
+                        </picture>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div>
-            <img src="./img/logos/footer-logo.png" alt="Логотип ТОП БРО">
-            <ul>
-                <li class="site-list__item">Cвязаться с нами</li>
-                <li class="site-list__item">reklama@wildjam.ru</li>
-                <li class="site-list__item">ул. Сущевская, д. 27, стр. 2</li>
-                <li class="site-list__item">+7 (499) 393-39-62</li>
+    <footer class="page__footer footer-items">
+        <div class="footer-items__links" id="grid">
+            <picture><img src="./img/logos/logo.png" width="201" height="201" alt="Логотип ТОП БРО"></picture>
+            <ul class="links-list">
+                <li class="site-list__item"><a>Cвязаться с нами</a></li>
+                <li class="site-list__item"><a>reklama@wildjam.ru</a></li>
+                <li class="site-list__item"><a>ул. Сущевская, д. 27, стр. 2</a></li>
+                <li class="site-list__item"><a call="+7 (499) 393-39-62">+7 (499) 393-39-62</a></li>
 
             </ul>
-            <ul>
-                <li>
+            <ul class="links-social">
+                <li class="site-list__item">
+                    <a>
                     vk.vom
+                    </a>
                 </li>
-                <li>
+                <li class="site-list__item">
+                    <a>
                     instagram
+                    </a>
                 </li>
             </ul>
         </div>
