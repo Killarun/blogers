@@ -464,21 +464,18 @@ li{
   padding-left: 10px;
 }
 .footer-items__links{
-  display: grid;
-    grid-template-columns: 1fr 4fr;
-    justify-content: space-between;
-    justify-self: flex-end;
-    align-items: center;
-    grid-template-areas: 'z x'
-                        'z y';
+
+
 }
 .links-list{
-  display: flex;
-  grid-area: y;
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+ 
 }
 .links-social{
   grid-column-start: 1;
   grid-column-end: -1;
   justify-self: center;
-  grid-area: x;
+  display: flex;
+ 
 }
