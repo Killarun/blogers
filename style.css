@@ -378,7 +378,9 @@ div {
   width: 4px;
   border-radius: 10px;
 }
-
+.card-info-article{
+  display: flex;
+}
 .card-info-text h4 {
   font-size: 30px;
   line-height: 36.57px;
@@ -464,12 +466,22 @@ div {
   font-weight: 800;
   line-height: 60.95px;
   margin-bottom: 50px;
-
-
-
 }
 
-
+.other-blogers-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow:-moz-hidden-unscrollable;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+.other-blogers-list__item{
+  margin-left: 20px;
+}
+.other-blogers-list__item:first-child{
+  margin-left: 0px;
+}
+.cursor{cursor: url('./img/cursor.svg'), auto;}
 /*footer*/
 .footer-items__links {
   display: flex;
@@ -527,3 +539,4 @@ div {
 .social-item--insta {
   background-image: url('./img/akar-icons_instagram-fill.svg');
 }
+
