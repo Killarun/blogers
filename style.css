@@ -190,7 +190,7 @@ a {
 
 }
 
-.blogers-filter-list li:after {
+/* .blogers-filter-list li:after {
   content: '';
   width: 24px;
   height: 24px;
@@ -199,7 +199,7 @@ a {
   right: -24px;
   top: 0;
 
-}
+} */
 
 .blogers-filter-list__item:last-child {
   margin-left: 54px;
@@ -357,26 +357,32 @@ div {
 .card-info-text {
   align-self: center;
   width: 808px;
-  overflow: scroll;
-  overflow-x: hidden;
+  /* overflow: auto;
+  overflow-x: hidden; */
   max-height: 125px;
 }
-
-.card-info-text::-webkit-scrollbar {
-  width: 4px;
-  border-radius: 10px;
+.simplebar-track{
+  overflow: visible;
 }
-
-.card-info-text::-webkit-scrollbar-track {
+.simplebar-track.simplebar-vertical{
   background-color: #969696;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow:inset 0 0 6px rgba(0, 0, 0, 0.2);
+  width: 2px;
 }
-
-.card-info-text::-webkit-scrollbar-thumb {
-  background-color: #f9f9fd;
+.simplebar-scrollbar::before{
+  left: -1px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 1;
   width: 4px;
-  border-radius: 10px;
+  background-color:#EFF3F5;
+}
+.simplebar-track.simplebar-vertical .simplebar-scrollbar::before{
+  top: 0;
+  bottom: 0
+}
+.simplebar-scrollbar.simplebar-visible::before{
+  opacity: 1;
 }
 .card-info-article{
   display: flex;
@@ -481,7 +487,7 @@ div {
 .other-blogers-list__item:first-child{
   margin-left: 0px;
 }
-.cursor{cursor: url('./img/cursor.svg'), auto;}
+
 /*footer*/
 .footer-items__links {
   display: flex;
@@ -540,3 +546,145 @@ div {
   background-image: url('./img/akar-icons_instagram-fill.svg');
 }
 
+.swiper-button-next:after, .swiper-button-prev:after{
+  display: none;
+}
+.swiper-button-next,
+.swiper-button-prev{
+  width: 24px;
+  height: 24px;
+  top: 100%;
+}
+.swiper-button-next {
+  background-image: url('./img/right.png')
+}
+.swiper-button-prev {
+  background-image: url('./img/left.png')
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+  right: 28%;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  left: 27%;}
+
+
+  .swiper-container {
+    width: 1300px;
+           height: 311px;
+padding-bottom: 50px;
+  
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 310px;
+}
+
+.swiper-container-horizontal>.swiper-scrollbar {
+  position: absolute;
+  left: 21px;
+  bottom: 7px;
+  z-index: 50;
+  height: 2px;
+  width: 40%;
+  transform: translateX(70%);
+}
+
+.swiper-scrollbar-drag{
+  background: #EFF3F5;
+  height: 4px;
+  width: 113px;
+  top: -1px;
+}
+.swiper-scrollbar{
+  background: #969696;
+}
+
+
+
+/**/
+.select {
+	margin: 0 auto;
+	position: relative;
+	width: 230px;
+}
+.select.is-active .select__body {
+  display: block;
+z-index: 4;
+}
+
+.select__header {
+
+	cursor: pointer;
+  display: flex;
+  width: 256px;
+}
+.select__current {
+	font-size: 16px;
+	line-height: 19.5px;
+	padding: 8px;
+}
+.select__icon {
+	align-items: center;
+	display: flex;
+	flex-shrink: 0;
+	justify-content: center;
+	height: 40px;
+		text-align: center;
+	width: 40px;
+}
+
+.select__body {
+  border-radius: 12px;
+  border-top: 0;
+  display: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  border: 0.5px solid #000000;
+  box-sizing: border-box;
+  box-shadow: inset 0px 0px 5px 5px rgba(255, 255, 255, 0.25);
+  background: rgba(110, 16, 94, 1);
+}
+.select__item {
+	cursor: url('./img/cursor.svg'), auto;
+	font-size: 16px;
+	line-height: 18.75px;
+  padding: 5px 0 5px 10px;
+  position: relative;
+}
+.select__body div:last-child{
+  display: flex;
+  justify-content: center;
+}
+.select__body div:last-child:after{
+  content: '';
+  background: url('./img/eva_arrow-ios-downward-outline.svg');
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.select__item--active{
+  background-color: #D26600;
+  cursor: url('./img/cursor-active.svg') 40 40,auto;
+}
+
+.select__item:hover {
+  background-color: #D26600;
+  border-radius: 12px;
+}
+.disabled {
+  padding: 10px 0 5px 10px;
+  pointer-events: none;
+  opacity: 0.4;
+}
