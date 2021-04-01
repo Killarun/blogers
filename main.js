@@ -24,12 +24,5 @@ let select = function () {
 };
 select();
 
-document.onclick = function(event){
-    console.log(event.target.tagName);
-    if (event.target.tagName == 'DIV'){
-        event.target.classList.add('select__item--active');
-        }
-      else if (event.target.tagName == 'H2'){
-        event.target.classList.add('hc'); 
-    }}
+
     
