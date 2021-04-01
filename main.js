@@ -19,12 +19,17 @@ let select = function () {
             currentText = select.querySelector('.select__current');
         currentText.innerText = text;
         select.classList.remove('is-active');
-        // select.classList.add('select__item--active');
-      
+        
     }
 };
-
-
 select();
 
-console.log(selectItem)
+document.onclick = function(event){
+    console.log(event.target.tagName);
+    if (event.target.tagName == 'DIV'){
+        event.target.classList.add('select__item--active');
+        }
+      else if (event.target.tagName == 'H2'){
+        event.target.classList.add('hc'); 
+    }}
+    
