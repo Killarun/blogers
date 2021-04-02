@@ -1,0 +1,303 @@
+@media(max-width: 767px) {
+	.page__main {
+		padding: 0 32px;
+	}
+
+	.page__main-blog {
+		padding: 0 10px;
+	}
+
+	.page_wrapper {
+		width: 100%;
+	}
+
+	.site-list__item {
+		margin-right: 0;
+		padding-top: 0;
+	}
+
+	.site-list li:first-child {
+		padding-left: 0;
+	}
+
+	.site-list li:last-child {
+		margin-right: 0;
+	}
+
+	.hide-mobile {
+		display: none;
+	}
+
+	.blogers-filter-list__item {
+		margin-left: 0;
+	}
+
+	.blogers-list {
+		grid-template-columns: 1fr;
+		gap: 10px 0;
+		justify-items: center;
+	}
+
+	.personal-card-wrapper {
+		max-height: unset;
+	}
+
+	.card {
+		grid-template-columns: 1fr;
+	}
+
+	.card-image img {
+		width: 100%;
+	}
+
+	.card h2 {
+		margin-bottom: 45px;
+	}
+
+	.card-info {
+		grid-row-start: 2;
+		grid-template-columns: 1fr;
+		margin-left: 17px;
+	}
+
+	.card-info-socials {
+		grid-template-columns: 1fr;
+	}
+
+	.card-info-text {
+		width: 100%;
+	}
+
+	.card-info-socials:after,
+    .card h2:after {
+		width: 300px;
+	}
+
+	.card-info-socials:after {
+		bottom: -17px;
+	}
+
+	.simplebar-track {
+		right: 8px;
+	}
+
+	.last-videos-list {
+		grid-template-columns: 1fr;
+		left: 0;
+	}
+
+	.footer-items__links {
+		display: grid;
+		justify-items: center;
+	}
+
+	.links-list {
+		justify-content: center;
+		margin-top: 0px;
+	}
+
+	.links-list__item,
+    .links-list__social-item {
+		margin-bottom: 20px;
+		margin-right: 0;
+		;
+	}
+
+	.links-list__social {
+		padding-right: 0;
+	}
+
+	.line__loading::before,
+    .line__loading::after {
+		width: 100px;
+	}
+
+	.line__loading p {
+		transform: translate(132px, -9px);
+	}
+
+	.swiper-container-horizontal>.swiper-scrollbar {
+		display: none;
+	}
+
+	.main-nav {
+		background-color: #999;
+	}
+
+	.main-nav--closed li {
+		display: none;
+	}
+
+	.main-nav--closed li--active {
+		display: block;
+	}
+
+	.site-list li:nth-child(5) a {
+		box-shadow: 1px -21px 29px -35px #000000 inset;
+	}
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+	.page_wrapper {
+		padding: 0 10px;
+	}
+
+	.card-image, .card {
+		display: flex;
+	}
+
+	.blogers-list {
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+	}
+
+	.line__loading::after,
+    .line__loading::before {
+		width: 300px;
+	}
+
+	.line__loading p {
+		transform: translate(333px, -9px);
+	}
+
+	.main-nav__list {
+		display: flex;
+		align-items: center;
+	}
+
+	.main-nav__list li:last-child {
+		margin-left: auto;
+		margin-right: 0;
+	}
+
+	.main-nav__wrapper {
+		display: grid;
+		grid-template-columns: 0.5fr 2.2fr;
+		padding-top: 10px;
+	}
+
+	.main-nav__wrapper img {
+		margin-left: -2px;
+	}
+
+	.links-list {
+		display: grid;
+		margin-top: 0;
+	}
+
+	.footer-items__links {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.links-list__item,
+    .links-list__social-item {
+		margin-right: 0;
+	}
+
+	.card-info-text {
+		width: 100%;
+	}
+
+	.card-info-socials,.card-info {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 10px;
+	}
+
+	.card-info-article {
+		width: 100%;
+		margin-top: 0px;
+	}
+
+	.card-info-socials:after,
+    .card h2:after {
+		width: 100%;
+		bottom: -10px;
+	}
+
+	.card-info-title {
+		font-size: 21px;
+		padding-left: 10px;
+	}
+
+	.card-info-description {
+		padding-left: 10px;
+	}
+
+	.last-videos-list {
+		display: flex;
+		gap: 10px 11px;
+		position: relative;
+		left: -4px;
+		flex-wrap: wrap;
+	}
+
+	.last-videos-list__items img {
+		width: 240px;
+	}
+
+	.last-videos-list__items:after {
+		bottom: 26%;
+		right: 33%;
+	}
+
+	.swiper-container-horizontal>.swiper-scrollbar {
+		display: none;
+	}
+
+	.simplebar-track {
+		right: 7px;
+	}
+
+	.card h2 {
+		font-size: 43px;
+		font-weight: 800;
+		line-height: 46.95px;
+		margin-top: 9px;
+		position: relative;
+		margin-bottom: 17px;
+	}
+}
+
+@media (min-width: 768px) {
+	.main-nav {
+		display: flex;
+		min-height: 56px;
+	}
+
+	.main-nav__toggle {
+		display: none;
+	}
+}
+
+@media (min-width: 1200px) {
+	.main-nav {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.main-nav__list {
+		display: flex;
+		align-items: center;
+	}
+
+	.main-nav__list li:last-child {
+		margin-left: auto;
+		margin-right: 0;
+	}
+
+	.main-nav__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 2.2fr;
+		padding-top: 10px;
+	}
+
+	.main-nav__wrapper img {
+		margin-left: -2px;
+	}
+
+	.main-nav__wrapper {
+		width: 1440px;
+	}
+}

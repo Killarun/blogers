@@ -4,34 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./fonts/Montserrat-Bold.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
-    <link href="./fonts/Montserrat-SemiBold.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
-    <link href="./fonts/Montserrat-ExtraBold.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
-    <link href="./fonts/Montserrat-Medium.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
-    <link href="./fonts/Montserrat-Light.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+    <link href="./fonts/Montserrat-Bold.woff2" type="font/woff2" crossorigin>
+    <link href="./fonts/Montserrat-SemiBold.woff2" type="font/woff2" crossorigin>
+    <link href="./fonts/Montserrat-ExtraBold.woff2" type="font/woff2" crossorigin>
+    <link href="./fonts/Montserrat-Medium.woff2" type="font/woff2" crossorigin>
+    <link href="./fonts/Montserrat-Light.woff2" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="/style.css" rel="stylesheet">
+    <link href="/media.css" rel="stylesheet">
     <title>Топ БРО</title>
 </head>
 
 
 
 <body class="page__body">
-    
-    <!-- <style>
-        @media (min-width: 1440px) {
-          html {
-            background: url("blog.png");
-            background-position: center top;
-            background-repeat: no-repeat;
-          }
-        }
-   
-        body {
-          opacity: 0.5;
-        }
-    
-      </style> -->
+
     <div class="page_wrapper">
     <header class="page__header">
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -40,14 +27,14 @@
               </button>
             <div class="main-nav__wrapper">
                 
-                    <img src="./img/logos/logo.png" width="98" height="98" alt="Логотип ТОП БРО">
+                    <img class="hide-mobile" src="./img/logos/logo.png" width="98" height="98" alt="Логотип ТОП БРО">
                 
                 <ul class="main-nav__list site-list">
-                    <li class="site-list__item"><a href="#">Блогеры</a></li>
-                    <li class="site-list__item"><a href="#">Кейсы</a></li>
-                    <li class="site-list__item"><a href="#">exit agency</a></li>
-                    <li class="site-list__item"><a href="#">Контакты</a></li>
-                    <li class="site-list__item"><a href="#">en / ru</a></li>
+                    <li class="site-list__item"><a class="site-list__menu " href="#">Блогеры</a></li>
+                    <li class="site-list__item"><a class="site-list__menu site-list__menu--active" href="#">Кейсы</a></li>
+                    <li class="site-list__item"><a class="site-list__menu " href="#">exit agency</a></li>
+                    <li class="site-list__item"><a class="site-list__menu " href="#">Контакты</a></li>
+                    <li class="site-list__item"><a class="site-list__menu " href="#">en / ru</a></li>
                 </ul>
             </div>
         </nav>
@@ -259,6 +246,7 @@ navMain.classList.add('main-nav--closed');
 navMain.classList.remove('main-nav--opened');
 }
 });
+
 </script>
     <script src="/main.js"></script>
 

@@ -13,6 +13,7 @@
    
     <link rel="stylesheet" href="/swiper-bundle.min.css">
     <link href="/style.css" rel="stylesheet">
+    <link href="/media.css" rel="stylesheet">
     <noscript>
         <style>
           /**
@@ -26,38 +27,27 @@
     <title>Топ БРО</title>
 </head>
 <body class="page__body">
-       <!-- <style>
-        @media (min-width: 1440px) {
-          html {
-            background: url("blog3.png");
-            background-position: center top;
-            background-repeat: no-repeat;
-          }
-        }
-   
-        body {
-          opacity: 0.5;
-        }
-    
-      </style> -->
     <div class="page_wrapper">
     <header class="page__header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
             <div class="main-nav__wrapper">
                 
-                    <img src="./img/logos/logo.png" width="98" height="98" alt="Логотип ТОП БРО">
+                    <img class="hide-mobile" src="./img/logos/logo.png" width="98" height="98" alt="Логотип ТОП БРО">
                 
                 <ul class="main-nav__list site-list">
-                    <li class="site-list__item"><a href="#">Блогеры</a></li>
-                    <li class="site-list__item"><a href="#">Кейсы</a></li>
-                    <li class="site-list__item"><a href="#">exit agency</a></li>
-                    <li class="site-list__item"><a href="#">Контакты</a></li>
-                    <li class="site-list__item"><a href="#">en / ru</a></li>
+                    <li class="site-list__item"><a class="site-list__menu " href="#">Блогеры</a></li>
+                    <li class="site-list__item"><a class="site-list__menu site-list__menu--active" href="#">Кейсы</a></li>
+                    <li class="site-list__item"><a class="site-list__menu " href="#">exit agency</a></li>
+                    <li class="site-list__item"><a class="site-list__menu " href="#">Контакты</a></li>
+                    <li class="site-list__item"><a class="site-list__menu " href="#">en / ru</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main class="page__main main-page">
+    <main class="page__main-blog main-page">
         <ol class="main-page__breadcrumbs">
         
             <li><a href="/">Главная</a></li>
@@ -67,7 +57,7 @@
         <section class="personal-card">
             <div class="personal-card-wrapper card">
                 <div class="card-image">
-                <img src="./img/bloger_image/first-bloger-foto.jpg">
+                <img  src="./img/bloger_image/first-bloger-foto.jpg">
                 </div>
                 <div class="card-info">
                     <h2>Максим Максимов</h2>
@@ -354,15 +344,50 @@
             slidesPerView: 4,
             spaceBetween: 10,
             loop: false,
+ 
             scrollbar: {
                 el: '.swiper-scrollbar'
             },
+            breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+  
+  768: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+  
+  991: {
+      slidesPerView: 4,
+      spaceBetween: 10
+    }
+  },
+
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev'
             }
         });
         new SimpleBar(document.querySelector('.card-info-text'));
+        var navMain = document.querySelector('.main-nav');
+var navToggle = document.querySelector('.main-nav__toggle');
+
+navMain.classList.remove('main-nav--nojs');
+
+navToggle.addEventListener('click', function () {
+if (navMain.classList.contains('main-nav--closed')) {
+navMain.classList.remove('main-nav--closed');
+navMain.classList.add('main-nav--opened');
+} else {
+navMain.classList.add('main-nav--closed');
+navMain.classList.remove('main-nav--opened');
+}
+});
+
+
     
     </script>
 </body>

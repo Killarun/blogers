@@ -24,5 +24,3 @@ let select = function () {
 };
 select();
 
-
-    
